@@ -20,6 +20,10 @@ public class Rocket : MonoBehaviour
     void Update()
     {
         ProcessInput();
+        if (!thrusterSound.isPlaying)
+        {
+            thrusterSound.Play();
+        }
     }
 
     private void ProcessInput()
